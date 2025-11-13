@@ -1,7 +1,8 @@
 import './App.css';
+import { Lookup } from "./pages/lookup";
 
 function App() {
-  return <div>IPNATION</div>;
+  return <Lookup />;
 }
 
 export default App;
