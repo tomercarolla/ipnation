@@ -4,6 +4,8 @@
     justify-content: center;
     height: 100%;
     padding-inline: 20px;
+    position: relative;
+    overflow: hidden;
 
     .box {
         width: 100%;
@@ -46,11 +48,6 @@
         width: 100%;
 
         .list {
-            display: flex;
-            flex-direction: column;
-            justify-content: start;
-            gap: 20px;
-            list-style: none;
             padding-block: 16px;
             padding-inline: 12px;
             max-height: 400px;
@@ -61,6 +58,10 @@
                 grid-template-columns: auto 2fr 1fr;
                 align-items: center;
                 gap: 12px;
+
+                &:not(:first-child) {
+                    margin-block-start: 20px;
+                }
 
                 .counter {
                     background-color: #E5E5E5;
