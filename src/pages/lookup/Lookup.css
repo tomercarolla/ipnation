@@ -38,7 +38,7 @@
         border-bottom: 1px solid #F1F1F1;
 
         .text {
-            color: #5F5F5F;
+            color: var(--text-secondary);
         }
     }
 
@@ -60,7 +60,7 @@
                 display: grid;
                 grid-template-columns: auto 2fr 1fr;
                 align-items: center;
-                gap: 8px;
+                gap: 12px;
 
                 .counter {
                     background-color: #E5E5E5;
@@ -75,9 +75,20 @@
                     font-size: 14px;
                 }
 
-                .error-text {
-                    color: red;
-                    font-size: 12px;
+                .flag-container {
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+
+                    .img-container {
+                        display: flex;
+                        width: 24px;
+                    }
+
+                    .time {
+                        color: var(--text-secondary);
+                        font-size: 14px;
+                    }
                 }
             }
         }

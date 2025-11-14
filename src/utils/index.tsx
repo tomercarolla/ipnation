@@ -1,1 +1,1 @@
-export * from './is-valid-ip.tsx';
+export * from './is-valid-ip';

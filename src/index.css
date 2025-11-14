@@ -1,3 +1,7 @@
+:root {
+    --text-secondary: #5F5F5F;
+}
+
 html,
 body,
 #root {
@@ -25,6 +29,11 @@ ul {
     padding: 0;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .sr-only {
     position: absolute;
     width: 1px;
@@ -35,4 +44,9 @@ ul {
     clip: rect(0,0,0,0);
     white-space: nowrap;
     border: 0;
+}
+
+.error-text {
+    color: red;
+    font-size: 12px;
 }

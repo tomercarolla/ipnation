@@ -4,15 +4,14 @@ import {v4 as uuid} from "uuid";
 import './Lookup.css';
 import {Button} from "@/ui";
 import type {Row} from "./types";
-import {List} from "./components/List";
-
+import { IPList } from "./components/IPList";
 
 export function Lookup() {
-    const [rows, setRows] = useState<Row[]>([{id: uuid(), value: ''}]);
+    const createRow = () => ({ id: uuid(), value: '' });
 
-    const addRow = () => {
-        setRows(prev => [...prev, {id: uuid(), value: ''}]);
-    }
+    const [rows, setRows] = useState<Row[]>([createRow()]);
+
+    const addRow = () => setRows(prev => [...prev, createRow()]);
 
     return (
         <section className='container'>
@@ -30,7 +29,7 @@ export function Lookup() {
                     </Button>
                 </div>
 
-                <List rows={rows} setRows={setRows}/>
+                <IPList rows={rows} setRows={setRows}/>
             </div>
         </section>
     );
