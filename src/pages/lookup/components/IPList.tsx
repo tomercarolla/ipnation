@@ -2,7 +2,7 @@ import type {Row} from "../types";
 import type {Dispatch, SetStateAction} from "react";
 import {useMutation} from "@tanstack/react-query";
 import {fetchIpCountry, type IpApiResponse} from "@/api";
-import {useTimeFormatter} from "@/utils/formatters.tsx";
+import {useTimeFormatter} from "@/utils/formatters";
 import {Input} from "@/ui/Input";
 import {Loader} from "@/ui/Loader";
 import {isValidIp} from "@/utils";
