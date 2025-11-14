@@ -1,6 +1,7 @@
 export type IpResult = {
+    country: string;
     flag: string;
-    hour: string;
+    time: string;
 }
 
 export type Row = {
