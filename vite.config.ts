@@ -12,7 +12,11 @@ export default defineConfig({
         globals: true,
         environment: 'jsdom',
         setupFiles: './src/setupTests.ts',
-        css: false
+        css: false,
+        coverage: {
+            provider: "v8",
+            reporter: ["text", "html"],
+        },
     },
     resolve: {
         alias: {
